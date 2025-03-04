@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Stallion Sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .company-name {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .navbar nav {
+            margin-top: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: #ff6600;
+        }
+        .products-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+        .products-section h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-box {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .product-box h3 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        .product-box p {
+            font-size: 16px;
+            color: #666;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/script.js"></script>       <!-- Main interactions -->
+    <script src="js/contact.js"></script>      <!-- Contact form handling -->
+    <script src="js/products.js"></script>     <!-- Fetching product list -->
+    <script src="js/whatsapp.js"></script>     <!-- WhatsApp integration -->
+    <script src="js/cart.js"></script>  
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Company Logo">
+            <span class="company-name">Stallion Sports</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>            
+            <a href="service.html">Services</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="products-section">
+        <h2>Our Products</h2>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="img/boots.jpg" alt="Equestrian Boots">
+                <h3>Equestrian Boots</h3>
+                <p>Durable and comfortable boots for riders.</p>
+            </div>
+            <div class="product-box">
+                <img src="img/saddle.jpg" alt="Horse Saddle">
+                <h3>Horse Saddle</h3>
+                <p>Premium leather saddle for maximum comfort.</p>
+            </div>
+            <div class="product-box">
+                <img src="img/pad.jpg" alt="Showpad & Feltpad">
+                <h3>Showpad & Feltpad</h3>
+                <p>High-quality pads for optimal horse performance.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 Stallion Sports | All Rights Reserved
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Stallion Sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .company-name {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .navbar nav {
+            margin-top: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: #ff6600;
+        }
+        
+        /* Main About Section */
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .about-image {
+            width: 50%;
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about-section {
+            width: 50%;
+            padding: 40px;
+            text-align: left;
+        }
+        .about-section h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .about-section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .about-container {
+                flex-direction: column;
+            }
+            .about-image, .about-section {
+                width: 100%;
+            }
+            .about-section {
+                text-align: center;
+                padding: 30px;
+            }
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/script.js"></script>       <!-- Main interactions -->
+    <script src="js/contact.js"></script>      <!-- Contact form handling -->
+    <script src="js/products.js"></script>     <!-- Fetching product list -->
+    <script src="js/whatsapp.js"></script>     <!-- WhatsApp integration -->
+    <script src="js/cart.js"></script>  
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Company Logo">
+            <span class="company-name">Stallion Sports</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="product.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <!-- Left Side Image -->
+        <div class="about-image">
+            <img src="img/h1.jpg" alt="About Image">
+        </div>
+        
+        <!-- Right Side Text -->
+        <div class="about-section">
+            <h2>About Stallion Sports</h2>
+            <p>Welcome to Stallion Sports, your trusted partner for premium horse riding equipment and accessories. We are dedicated to providing top-quality saddles, bridles, helmets, boots, and other equestrian essentials to ensure a safe and enjoyable riding experience. Our passion for horses and commitment to excellence drive us to source the best products for riders of all levels.</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 Stallion Sports | All Rights Reserved
+    </div>
+    
+</body>
+</html>

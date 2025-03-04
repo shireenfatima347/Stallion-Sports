@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Stallion Sports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+        .company-name {
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .navbar nav {
+            margin-top: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar a:hover {
+            color: #ff6600;
+        }
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+        .contact-section h2 {
+            font-size: 38px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+        .contact-section p {
+            font-size: 18px;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            max-width: 600px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #cc5500;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .contact-info a {
+            display: block;
+            margin: 10px 0;
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+            color: #ff6600;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/script.js"></script>       <!-- Main interactions -->
+    <script src="js/contact.js"></script>      <!-- Contact form handling -->
+    <script src="js/products.js"></script>     <!-- Fetching product list -->
+    <script src="js/whatsapp.js"></script>     <!-- WhatsApp integration -->
+    <script src="js/cart.js"></script>  
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Company Logo">
+            <span class="company-name">Stallion Sports</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us, and we’ll be happy to assist you!</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <a href="tel:+918303530386"><i class="fas fa-phone"></i> +91 8303530386</a>
+            <a href="https://wa.me/918303530386" target="_blank"><i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp</a>
+            <a href="https://www.facebook.com/StallionSports" target="_blank"><i class="fab fa-facebook" style="color: #1877F2;"></i> Facebook</a>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 Stallion Sports | All Rights Reserved
+    </div>
+    
+</body>
+</html>
